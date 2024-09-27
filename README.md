@@ -7,8 +7,12 @@
 3. Run the following command to create a new Vite React project:
 
     ```bash
-    npm create-vite@latest my-project -- --template react
+    npx create-vite@latest
     ```
+    - It will ask for the Project Name
+    - Select React
+    - Select TypeScript + SWC
+
 
 4. Navigate to the project directory:
 
@@ -42,3 +46,5 @@ Once everything is set up, run the development server with the following command
 
 ```bash
 npm run dev
+
+Your project is live on your local machine go to browser and open the link provided on the terminal
