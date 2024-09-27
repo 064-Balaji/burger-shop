@@ -15,9 +15,13 @@ const CardComp = ({
     <Flex
       gap="4"
       direction={"column"}
-      className="w-[300px] bg-red-400 rounded-lg"
+      className="max-w-[300px] min-w-[150px] bg-red-400 rounded-lg"
     >
-      <img src={image} alt="" className="w-[350px] h-[200px] rounded-t-lg" />
+      <img
+        src={image}
+        className="w-[350px] h-[200px] rounded-t-lg object-cover"
+      />
+      {/* object-fit: fill */}
       <Flex direction={"column"} justify={"center"} align={"center"} gap={"3"}>
         <Heading>{name}</Heading>
         <Flex gap={"3"} align={"center"}>
