@@ -1,6 +1,6 @@
 import { Flex, Heading, Button, Text } from "@radix-ui/themes";
 import { useState } from "react";
-
+// Acccess all the parameters passed from the constructor and destruct it
 const CardComp = ({
   name,
   image,
@@ -10,7 +10,9 @@ const CardComp = ({
   image: string;
   count: number;
 }) => {
+  // Use a state to set the count of each selected items in the lise
   const [num, setNum] = useState(count);
+  
   return (
     <Flex
       gap="4"
