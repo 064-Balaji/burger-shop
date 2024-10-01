@@ -3,12 +3,16 @@ import { useState } from "react";
 
 const CardComp = ({
   name,
+  price,
   image,
   count,
+  handleChange,
 }: {
   name: string;
+  price: number;
   image: string;
   count: number;
+  handleChange: (name: string, count: number) => void;
 }) => {
   const [num, setNum] = useState(count);
 
@@ -31,12 +35,16 @@ const CardComp = ({
         >
           {name}
         </Heading>
+        <Text>Rs: {price} /-</Text>
         <Flex gap={"2"} align={"center"}>
           <Button
             color="red"
             size="2"
             className="bg-red-500 text-white hover:bg-red-600 transition-colors duration-300 rounded-full"
-            onClick={() => setNum((n) => (n > 0 ? n - 1 : n))}
+            onClick={() => {
+              setNum((n) => (n > 0 ? n - 1 : n));
+              handleChange(name, num - 1);
+            }}
           >
             -
           </Button>
@@ -50,7 +58,10 @@ const CardComp = ({
             color="green"
             size="2"
             className="bg-green-500 text-white hover:bg-green-600 transition-colors duration-300 rounded-full"
-            onClick={() => setNum((n) => n + 1)}
+            onClick={() => {
+              setNum((n) => n + 1);
+              handleChange(name, num + 1);
+            }}
           >
             +
           </Button>
