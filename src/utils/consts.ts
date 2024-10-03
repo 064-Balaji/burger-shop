@@ -2,6 +2,7 @@ export const links = [
   { label: "About", href: "/about" },
   { label: "Custom Order", href: "/custom-order" },
   { label: "Contact Us", href: "/contact" },
+  { label: "Delivery", href: "/delivery" },
 ];
 
 export const vegetables = [

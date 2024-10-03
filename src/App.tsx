@@ -10,6 +10,7 @@ import Contact from "./Pages/Contact";
 import Checkout from "./Pages/Checkout";
 import Cart from "./Pages/Cart";
 import Footer from "./Components/Footer";
+import DeliveryFood from "./Pages/DeliveryFood";
 function App() {
   return (
     <BrowserRouter>
@@ -24,6 +25,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/payment" element={<Payment />} />
+        <Route path="/delivery" element={<DeliveryFood />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />

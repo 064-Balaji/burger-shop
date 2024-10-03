@@ -31,3 +31,6 @@ The `useNavigate` hook is used when you need to navigate programmatically, such 
 The `useParams` hook is used to access URL parameters in React Router. For instance, if your route path includes dynamic segments (e.g., `/product/:id`), you can use `useParams` to retrieve the `id` value. This is helpful when you need to extract information from the URL and use it within your component.
 
 ## How to create Private Routs
+
+
+
