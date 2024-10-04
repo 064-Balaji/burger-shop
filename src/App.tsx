@@ -11,6 +11,7 @@ import Checkout from "./Pages/Checkout";
 import Cart from "./Pages/Cart";
 import Footer from "./Components/Footer";
 import DeliveryFood from "./Pages/DeliveryFood";
+import Pay from "./Pages/Pay";
 function App() {
   return (
     <BrowserRouter>
@@ -26,6 +27,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/delivery" element={<DeliveryFood />} />
+        <Route path="/pay" element={<Pay />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
@@ -38,8 +40,7 @@ function App() {
       
     */}
     </BrowserRouter>
-  )
+  );
 }
-
 
 export default App;

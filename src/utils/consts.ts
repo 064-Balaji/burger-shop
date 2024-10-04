@@ -5,12 +5,19 @@ export const links = [
   { label: "Delivery", href: "/delivery" },
 ];
 
+// arrays - Breads, Vegetables, Meat
+// I am going to create new Object = {
+//  Breads: bread-array
+//  Vegetables: vegetable-array
+//  Meat: meat-array
+// }
+
 export const vegetables = [
   {
     name: "Tomato",
     image:
       "https://burger-shop-balajis-projects-85b24c63.vercel.app/assets/tomato-casb8PiX.jpg",
-    price: 30,
+    price: 10,
     count: 2,
   },
   {

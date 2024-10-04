@@ -1,21 +1,24 @@
-import { Flex, Heading, Table, Text } from "@radix-ui/themes";
-import CardComp from "./CardComp";
+import { Flex, Heading } from "@radix-ui/themes";
 import { breads } from "../utils/consts";
-import { useState } from "react";
-const Breads = () => {
+import CardComp from "./CardComp";
+const Breads = ({
+  handleBillChange,
+}: {
+  handleBillChange: (name: string, count: number, type: string) => void;
+}) => {
   // void add(int a, int b){
   // a ,b
   // }
   // add(num, num2)
-  const [breadBill, setBreadBill] = useState(breads);
-  const handleBillChange = (name: string, count: number) => {
-    const updated = breadBill.map((bread) =>
-      bread.name == name
-        ? { ...bread, count: (bread.count = count) }
-        : { ...bread }
-    );
-    setBreadBill(updated);
-  };
+  // const [breadBill, setBreadBill] = useState(breads);
+  // const handleBillChange = (name: string, count: number) => {
+  //   const updated = breadBill.map((bread) =>
+  //     bread.name == name
+  //       ? { ...bread, count: (bread.count = count) }
+  //       : { ...bread }
+  //   );
+  //   setBreadBill(updated);
+  // };
   return (
     <Flex direction={"column"} gap={"6"} p={"6"}>
       <Heading className="bg-[#0D7C66] text-white max-w-fit px-4 py-1 rounded-2xl">
@@ -28,11 +31,12 @@ const Breads = () => {
             image={bread.image}
             count={bread.count}
             price={bread.price}
+            type="bread"
             handleChange={handleBillChange}
           />
         ))}
       </Flex>
-      <Table.Root>
+      {/* <Table.Root>
         <Table.Header>
           <Table.ColumnHeaderCell>Name: </Table.ColumnHeaderCell>
           <Table.ColumnHeaderCell>Quantity: </Table.ColumnHeaderCell>
@@ -45,7 +49,7 @@ const Breads = () => {
             <Table.Cell>{bill.price * bill.count}</Table.Cell>
           </Table.Row>
         ))}
-      </Table.Root>
+      </Table.Root> */}
     </Flex>
   );
 };
