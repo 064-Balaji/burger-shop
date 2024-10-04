@@ -4,6 +4,7 @@ import { vegetables } from "../utils/consts";
 import { useState } from "react";
 const Vegetables = () => {
   const [vegBill, setVegBill] = useState(vegetables);
+  
   const handleBillChange = (name: string, count: number) => {
     const updated = vegBill.map((bread) =>
       bread.name == name
@@ -12,6 +13,7 @@ const Vegetables = () => {
     );
     setVegBill(updated);
   };
+
   return (
     <Flex direction={"column"} gap={"6"} p={"6"}>
       <Heading className="bg-[#0D7C66] text-white max-w-fit px-4 py-1 rounded-2xl">
