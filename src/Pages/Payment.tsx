@@ -1,10 +1,6 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
-
-// useState
+import { useParams } from 'react-router-dom';
 
 const Payment = () => {
-  // {} => {Variable}
   const { paymentId } = useParams();
   console.log(paymentId);
   

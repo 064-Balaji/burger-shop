@@ -1,12 +1,8 @@
 import { ShoppingCart, User } from "lucide-react";
 import { links } from "../utils/consts";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
-const goToCart = () =>{
-  const navigate = useNavigate();
-  navigate("/cart");
-}
   return (
     <nav className="flex justify-between items-center bg-white shadow-md px-10 py-6">
       <div className="flex items-center gap-6">

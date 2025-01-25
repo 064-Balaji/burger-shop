@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Custom = () => {
   const veggies = ['Tomato', 'Spinach', 'Cabbage', 'Carrot', 'Broccoli', 'Peppers', 'Onion', 'Potato'];
   const meats = ['Chicken', 'Beef', 'Pork', 'Lamb', 'Turkey'];
