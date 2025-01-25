@@ -1,3 +1,38 @@
+# Burgeee - Fast Food Delivery App
+
+A modern fast food delivery web application built with React, TypeScript, and TailwindCSS.
+
+## Features
+
+- 🍔 Browse menu items and customize orders
+- 🚚 Real-time order tracking
+- 👤 User profiles with order history
+- ⭐ Favorite orders functionality
+- 📱 Fully responsive design
+- 💳 Multiple payment methods
+
+## Tech Stack
+
+- React 18
+- TypeScript
+- Vite
+- TailwindCSS
+- Radix UI
+- Framer Motion
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- Node.js (v16 or higher)
+- npm (v7 or higher)
+
+## Development
+
+To get started with development:
+
+1. Clone this repository
+
+
 # Burger Shop
 
 ## Project Initialization
