@@ -12,6 +12,8 @@ import Cart from "./Pages/Cart";
 import Footer from "./Components/Footer";
 import DeliveryFood from "./Pages/DeliveryFood";
 import Pay from "./Pages/Pay";
+import BurgerBuilder from "./Pages/BurgerBuilder";
+
 function App() {
   return (
     <BrowserRouter>
@@ -28,17 +30,10 @@ function App() {
         <Route path="/payment" element={<Payment />} />
         <Route path="/delivery" element={<DeliveryFood />} />
         <Route path="/pay" element={<Pay />} />
+        <Route path="/burger-builder" element={<BurgerBuilder />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
-      {/* <PrivateRoutes /> 
-
-      Role based Access 
-      
-      1. Admin
-      2. User
-      
-    */}
     </BrowserRouter>
   );
 }
